@@ -346,6 +346,8 @@ body
 .auth-info {
     font-size: 16px;
     margin: 0; 
+    margin-bottom: 10px; 
+    line-height: 1.6; 
 }
 
 .auth-text {
@@ -386,6 +388,26 @@ body
 }
 
 
+
+.toggle-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5px;
+    color: #FFFFFF;
+}
+
+.toggle-btn:hover {
+    color: #FFFFFF;
+}
+
+/* Media query pentru ecrane sub 600px */
+@media (max-width: 600px) {
+    th, td {
+        font-size: 14px; 
+    }
+}
 
 
 
