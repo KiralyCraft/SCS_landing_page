@@ -67,6 +67,7 @@ body
 	margin-left: 20%;
 }
 
+
 .card
 {
 	position: relative;
@@ -110,12 +111,44 @@ body
 	white-space: nowrap;
 }
 
+.card-title-special
+{
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--Text);
+	margin-bottom: 100px;
+}
+
 .card-title
 {
 	font-size: 20px;
 	font-weight: 500;
 	color: var(--Text);
 }
+
+.microsoft-icon {
+    width: 15px;  
+    height: auto; 
+    margin-top: 15px;  
+}
+
+.sign-in-icon-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sign-in-text {
+    font-size: 14px; 
+    color: var(--Text);
+    margin-top: 5px;  
+}
+
 
 #logo
 {
@@ -153,6 +186,7 @@ body
 {
 	padding: 20px;
 }
+
 
 #card-container
 {
@@ -200,12 +234,31 @@ body
 	align-items: center;
 }
 
+.footer2
+{
+	margin-top: 5vh;
+	padding: 10vh 2.5vw 10vh 2.5vw;
+	background-color: var(--BackgroundSecondary);
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
 @media(max-width: 950px)
 {
 	.footer
 	{
 		flex-direction: column;
 		row-gap: 7.5vh;
+		position : relative;
 	}
 }
 
@@ -244,3 +297,85 @@ body
 {
 	text-decoration: none;
 }
+
+
+.auth-box {
+    position: relative;
+    text-align: left;
+    color: var(--Text);
+    background-color: var(--BackgroundSecondary);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 25px;
+    margin-top: 5vh;
+    gap: 15px;
+    min-width: 300px; 
+    max-width: 600px; 
+    width: 90%; 
+    user-select: text !important;
+}
+
+.auth-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 25px;
+    border: 3px solid transparent;
+    background: var(--Gradient) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    pointer-events: none;
+}
+
+.auth-info {
+    font-size: 16px;
+    margin: 0; 
+}
+
+.auth-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px; 
+}
+
+
+@media (max-width: 600px) {
+    .auth-box {
+        padding: 15px;
+        min-width: unset; 
+        max-width: 100%; 
+        gap: 10px; 
+    }
+
+    .auth-text {
+        font-size: 16px;
+    }
+
+    .auth-info {
+        font-size: 14px; 
+    }
+}
+
+
+#credentialsTable th, td {
+	 text-align: left; 
+	 padding-bottom: 9px;
+	 padding-right: 30px;
+}
+
+.custom-link {
+    color: lightblue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+
+
