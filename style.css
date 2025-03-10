@@ -262,6 +262,16 @@ body
 	}
 }
 
+@media(max-width: 950px)
+{
+	.footer2
+	{
+		flex-direction: column;
+		row-gap: 7.5vh;
+		position : relative;
+	}
+}
+
 .footer-content
 {
 	flex: 0.33;
