@@ -13,6 +13,7 @@ Pull requests welcome! Pana la urma, e site-ul studentilor, make it yours!
 ## Thanks
 Nandra Rares,
 Spac Alexandru,
-Cozma Alexandru
+Cozma Alexandru,
+Trifan Alexandra
 
 FMI Management pentru sustinere :)
