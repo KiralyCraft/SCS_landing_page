@@ -409,5 +409,11 @@ body
     }
 }
 
-
-
+.copy-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    margin-left: 5px;
+}
